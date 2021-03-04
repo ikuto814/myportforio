@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: rgb(248, 248, 248);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 220%;
+}
+h2{
+    font-size: 150%;
+}
+h3 {
+    font-size: 120%;
+}
+li ,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* header */
+header {
+    background-color: dimgray;
+}
+/* nav */
+nav h1 {
+    float: left;
+    padding-top: 15px;
+    color: #fff;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 30px;
+        /* padding: 16px 0; */
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #a1a0aa;
+}
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 999;
+}
+
+.sticky h1 {
+    padding-top: 0;
+    color: #4b55e0;
+}
+.sticky li {
+    padding-top: 0;
+}
+.sticky ul {
+    padding-top: 15px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 8px 0;
+    color: #555;
+}
+.mobile-nav-icon {
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+/* introduce */
+.section-introduce {
+    background:url("images/computer-3036166_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(22, 22, 22);
+    line-height: 1.7;
+}
+.introduce-item h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient( right, rgb(218, 218, 218), transparent);
+  background: linear-gradient(to right, rgb(218, 218, 218), transparent);
+}
+.introduce-image {
+    margin-top: 5%;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    width: 35%;
+    max-width: 25rem;
+    height: 80%;
+    transform: translate(-53%, -50%);
+    z-index: 1;
+}
+.introduce-item:hover {
+    background-color: rgb(255, 255, 255);
+}
+.section-introduce ion-icon {
+    color: rgb(218, 218, 218);
+}
+
+/* works cards*/
+.about-cards-wrapper {
+    display: flex;
+}
+.card {
+    margin: 2%;
+    background-color: rgb(49, 59, 90);
+    opacity: 0.9;
+}
+.card-img {
+    width: 100%;
+}
+.card-content {
+    color: #dddddd;
+    padding: 3%;
+}
+.card-heading {
+    text-align: center;
+}
+.card-paragraph {
+    color: rgb(192, 192, 192);
+}
+.card ion-icon {
+    margin: 1% auto;
+    font-size: 250%;
+    display: block;
+    padding-top: 20px;
+}
+/* works */
+  .works_inner {
+      cursor: none;
+  }
+ .section-works {
+    background: url("images/chan-hoi-uj-w-v7OFT4-unsplash.jpg");
+    padding-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-works h2,
+.section-works h3{
+    text-align: center;
+}
+.section-works h2 {
+    margin-top: 3rem;
+}
+.section-works h3 {
+    font-family: 'Tangerine', cursive;
+}
+.works-title {
+    text-align: center;
+}
+.works_item_title {
+    text-align: center;
+    margin-top: 40px;
+}
+.section-works a {
+    display: block;
+    margin: 0 auto;
+}
+.section-works img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.section-works img:hover {
+    opacity: 1;
+}
+.shine{
+	position: fixed;
+	top: -15px;
+	left: -15px;
+	width: 30px;
+	height: 30px;
+	background: url("images/p_star001_a002.gif") 50% 50% no-repeat;
+	background-size: contain;
+	z-index: 2;
+	animation: shine 2s ease-out 0s forwards;
+}
+@keyframes shine{
+	0%{
+		transform: translateY(0) rotate(-5deg);
+		opacity: 0;
+	}
+	5%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(50px) rotate(5deg);
+		opacity: 0;
+	}
+}
+/* mfp */
+.open {
+     display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background: #fff;
+     padding: 20px;
+     height:100%;
+    z-index: 1000;
+    color: black;
+}
+.mfp li {
+    font-size: 16px;
+}
+.mfp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.mfp img {
+    width: 100%;
+}
+.mfp ion-icon {
+    font-size: 30px;
+}
+
+/* help */
+.section-help {
+    padding-top: 20px;
+    background: url("images/technology-5030479_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.help-title ,
+.help-title h2 ,
+.contents-hp ,
+.contents-wp{
+    text-align: center;
+}
+
+.section-help h2 ,
+.section-help h3 {
+    font-family: 'Tangerine', cursive;
+}
+
+/* contact */
+.section-contact {
+    background: url("images/mailbox-1819966_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+input[type=text],
+input[type=email],
+input[type=title],
+textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+
+}
+
+.section-contact label {
+    vertical-align:middle;
+}
+
+.section-contact h2,
+.section-contact p {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-form .row {
+    margin: 10px;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+*:focus {outline: none;}
+
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+input[type=submit] {
+    display: block;
+    text-align: center;
+    background-color: #4550e9;
+    border: 1px solid #4550e9;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #2e3ae4;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    padding: 5px 0;
+}
+
+footer ion-icon {
+    font-size: 250%;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}
+
+footer ul {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding: 0 2%;
+}
+
+footer p {
+    font-size: 80%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 60%;
+}
+
+footer a {
+    display: inline-block;
+}
+footer ion-icon {
+    transition: 1s;
+}
+.twitter:hover {
+    color: #00acee;
+}
+.mail:hover {
+    color: fuchsia;
+}
+.facebook:hover {
+    color: #3b5998;
+}

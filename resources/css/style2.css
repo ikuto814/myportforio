@@ -128,9 +128,6 @@ nav h1 {
     left: 25%;
     width: 295px;
     height: 525px;
-    /* max-width: 35%; */
-    /* max-width: 25rem;
-    max-height: 70%; */
     transform: translate(-53%, -50%);
     z-index: -1;
 }

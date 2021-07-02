@@ -31,12 +31,14 @@ a {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    z-index: 1;
 }
 /* header */
 header {
     background-color: dimgray;
 }
 /* nav */
+
 nav h1 {
     float: left;
     padding-top: 15px;
@@ -67,7 +69,7 @@ nav h1 {
 .main-nav li a:active {
     border-bottom: 2px solid #a1a0aa;
 }
-/* Sticky navi */
+/* Sticky nav */
 .sticky {
     position: fixed;
     top: 0;
@@ -123,12 +125,14 @@ nav h1 {
     margin-top: 5%;
     position: fixed;
     top: 50%;
-    left: 30%;
-    width: 35%;
-    max-width: 25rem;
-    height: 80%;
+    left: 25%;
+    width: 295px;
+    height: 525px;
+    /* max-width: 35%; */
+    /* max-width: 25rem;
+    max-height: 70%; */
     transform: translate(-53%, -50%);
-    z-index: 1;
+    z-index: -1;
 }
 .introduce-item:hover {
     background-color: rgb(255, 255, 255);
